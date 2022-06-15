@@ -15,7 +15,7 @@ function Post({ post }: Props) {
     <main>
         <Header />
         <img src={urlFor(post.mainImage).url()!} className="w-full h-40 object-cover" alt="" />
-
+        <title>{post.title}</title>
         <article className="max-w-3xl mx-auto">
             <h1 className="text-3xl mt-10 mb-3">{post.title}</h1>
             <h2 className="text-xl font-light text-gray-500 mb-2">{post.description}</h2>
