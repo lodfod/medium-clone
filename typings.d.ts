@@ -19,3 +19,5 @@ export interface Post {
     body: [object];
 
 }
+
+declare module '*.pdf' {   const content: any;   export default content; }

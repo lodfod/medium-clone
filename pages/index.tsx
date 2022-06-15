@@ -7,6 +7,8 @@ import { fileURLToPath } from 'url'
 import Header from '../components/Header'
 import {sanityClient, urlFor} from '../sanity';
 import {Post} from '../typings'
+
+
 interface Props {
   posts: [Post];
 }
@@ -23,9 +25,6 @@ export default function Home({ posts }: Props) {
 
       <Header></Header>
 
-      <div>
-        <div className="px-10 space-y-5"></div>
-      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 p-2 md:p-6">
         {posts.map(post => (
 

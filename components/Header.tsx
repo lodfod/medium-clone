@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Pdf from '../Documents/resume-current.pdf';
 
 
 function Header() {
@@ -17,7 +18,7 @@ function Header() {
         </div>
         <div className="flex items-center space-x-5 text-green-600">
             <h3> Sign In</h3>
-            <h3 className="border px-4 py-1 rounded-full border-green-600">Get Started</h3>
+            <h3 className="border px-4 py-1 rounded-full border-green-600"> <a href="https://storage.cloud.google.com/archish-documents/Archish_Arun_Resume_15-06-2022-10-26-28.pdf">Resume</a> </h3>
         </div>
     </header>
   )
